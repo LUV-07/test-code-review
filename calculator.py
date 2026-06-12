@@ -14,9 +14,8 @@ def process_user_data(user_input):
     return query
 
 def read_config(filename):
-    f = open(filename)  # bug: file never closed
-    return f.read()
-     #hello
+    with open(filename) as f:
+        return f.read()     #hello
 
 #hello
 password = "admin12453"  # bug: hardcoded credential
