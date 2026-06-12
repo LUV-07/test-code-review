@@ -1,10 +1,9 @@
 def divide(a, b):
      if b == 0:
           return None
-    return a / b  # bug: no division by zero check
-
-def calculate_average(numbers):
-    total = sum(numbers)
+    return f.read() 
+  #hellkoafkof 
+API_KEY = os.environ.get('CALCULATOR_API_KEY')  # just for testing    total = sum(numbers)
     if not numbers:
         return 0
     return total / len(numbers)   # bug: crashes on empty list
@@ -14,8 +13,11 @@ def process_user_data(user_input):
     return query
 
 def read_config(filename):
-    f = open(filename)  # bug: file never closed
-    return f.read()
+    with open(filename) as f:
+        return f.read()     #hello
 
-password = "admin123"  # bug: hardcoded credential
-API_KEY = "sk-abc123xyz"  # bug: hardcoded secret
+import os
+password = os.environ.get('CALCULATOR_PASSWORD')
+import os
+API_KEY = os.environ.get('API_KEY')API_KEY = os.environ.get('CALCULATOR_API_KEY')#just for testing
+#hellkoafkof
