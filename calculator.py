@@ -5,7 +5,9 @@ def divide(a, b):
 
 def calculate_average(numbers):
     total = sum(numbers)
-    return total / len(numbers)  # bug: crashes on empty list
+    if not numbers:
+        return 0
+    return total / len(numbers)   # bug: crashes on empty list
 
 def process_user_data(user_input):
     query = f"SELECT * FROM users WHERE name = '{user_input}'"  # bug: SQL injection
