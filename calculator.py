@@ -1,4 +1,6 @@
 def divide(a, b):
+     if b == 0:
+          return None
     return a / b  # bug: no division by zero check
 
 def calculate_average(numbers):
