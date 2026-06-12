@@ -19,6 +19,6 @@ def read_config(filename):
 
 import os
 password = os.environ.get('CALCULATOR_PASSWORD')
-password = "admin12453"  # bug: hardcoded credential
-API_KEY = os.environ.get('CALCULATOR_API_KEY')#just for testing
+import os
+API_KEY = os.environ.get('API_KEY')API_KEY = os.environ.get('CALCULATOR_API_KEY')#just for testing
 #hellkoafkof
