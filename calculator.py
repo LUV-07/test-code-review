@@ -19,3 +19,4 @@ def read_config(filename):
 
 password = "admin123"  # bug: hardcoded credential
 API_KEY = "sk-abc123xyz"  # bug: hardcoded secret
+#just for testing
