@@ -1,10 +1,9 @@
 def divide(a, b):
      if b == 0:
           return None
-    return a / b  # bug: no division by zero check
-
-def calculate_average(numbers):
-    total = sum(numbers)
+    return f.read() 
+  #hellkoafkof 
+API_KEY = os.environ.get('CALCULATOR_API_KEY')  # just for testing    total = sum(numbers)
     if not numbers:
         return 0
     return total / len(numbers)   # bug: crashes on empty list
