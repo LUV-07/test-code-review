@@ -16,6 +16,7 @@ def process_user_data(user_input):
 def read_config(filename):
     f = open(filename)  # bug: file never closed
     return f.read()
+     #hello
 
 password = "admin123"  # bug: hardcoded credential
 API_KEY = "sk-abc123xyz"  # bug: hardcoded secret
